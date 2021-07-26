@@ -1,0 +1,300 @@
+* {
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*JS*/
+.bodyToggle {
+  overflow: hidden;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  height: 100%;
+  text-align: center;
+}
+
+nav, .line {
+  -webkit-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+}
+
+.info p, .more {
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.title {
+  text-transform: capitalize;
+  letter-spacing: 4px;
+}
+
+.title, .info p, .more a {
+  color: #687D80;
+}
+
+.more a {
+  text-decoration: underline;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  text-transform: capitalize;
+}
+
+.more a svg {
+  width: .7rem;
+  height: auto;
+}
+
+.img {
+  display: -ms-grid;
+  display: grid;
+  gap: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+#hero {
+  height: 100vh;
+  position: relative;
+}
+
+#hero #bg-img {
+  background-image: url(/assets/living-room/living-room-4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+}
+
+#hero header {
+  height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*JS*/
+  /*JS*/
+}
+
+#hero header a {
+  color: white;
+}
+
+#hero header nav {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  top: 0;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding-top: 7rem;
+  left: -100vw;
+}
+
+#hero header nav #nav-title {
+  font-size: 2.25rem;
+}
+
+#hero header nav ul {
+  margin-top: 2rem;
+}
+
+#hero header nav ul .section-1 {
+  margin-bottom: 1rem;
+}
+
+#hero header nav ul li + li {
+  margin-top: 1rem;
+}
+
+#hero header nav ul li a {
+  font-size: 1.3rem;
+}
+
+#hero header .navToggle {
+  left: 0;
+}
+
+#hero header #menu {
+  margin-left: 2rem;
+}
+
+#hero header #menu button {
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /*JS*/
+  /*JS*/
+  /*JS*/
+}
+
+#hero header #menu button .line {
+  height: 4px;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+}
+
+#hero header #menu button .line-1 {
+  top: 0;
+}
+
+#hero header #menu button .line1Toggle {
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+}
+
+#hero header #menu button .line-2 {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#hero header #menu button .line2Toggle {
+  opacity: 0;
+}
+
+#hero header #menu button .line-3 {
+  bottom: 0;
+}
+
+#hero header #menu button .line3Toggle {
+  bottom: 50%;
+  -webkit-transform: translateY(50%) rotate(-45deg);
+          transform: translateY(50%) rotate(-45deg);
+}
+
+#hero header .menuToggle {
+  z-index: 2;
+}
+
+#hero header #title {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#hero header #title a h1 {
+  text-transform: uppercase;
+  font-size: 2.25rem;
+  letter-spacing: 4px;
+}
+
+#hero #intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 81%;
+}
+
+#hero #intro p {
+  color: white;
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+#founders img {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+#projects .individual-projects .container .title {
+  text-align: left;
+}
+
+footer {
+  color: #687D80;
+  height: 10vh;
+}
+
+footer .container {
+  text-align: left;
+  padding: 0 2rem;
+  gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .container #socials a i {
+  color: #687D80;
+}
+
+footer .container #socials a + a {
+  margin-left: 1rem;
+}
+
+footer .container #legals {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+footer .container #legals a {
+  color: #687D80;
+}
+
+footer .container #legals a:first-child {
+  border: 0 1px 0 1px solid #687D80;
+}
+/*# sourceMappingURL=styles.css.map */

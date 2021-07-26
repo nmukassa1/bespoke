@@ -1,0 +1,17 @@
+$maincolor: #687D80;
+@mixin grid($gap, $column) {
+    display: grid;
+    gap: $gap;
+    align-items: center;
+    grid-template-columns: $column;
+}
+@mixin paragraph($size) {
+    font-size: $size;
+    color: $maincolor;
+}
+@mixin header($size, $maincolor, $spacing) {
+    font-size: $size;
+    color: $maincolor;
+    text-transform: capitalize;
+    letter-spacing: $spacing;
+}
