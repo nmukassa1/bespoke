@@ -1,0 +1,526 @@
+@import 'variables&mixins';
+
+//Samsung Fold & Iphone 5/SE Portrait
+@media (max-width: 320px) {
+    
+    .container{
+        padding: 4rem 1.5rem;
+    }
+
+    .info p, .more{
+        font-size: 1rem;
+    }
+    
+    .title{
+        h1{
+            font-size: 1.2rem;
+        }
+    }
+
+    #hero{
+        header{
+            #menu{
+                margin-left: 1rem;
+                button{
+                    transform: scale(.7);
+                }
+            }
+            #title{
+                a{
+                    h1{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+            nav{
+                a{
+                    h1{
+                        font-size: 1.5rem;
+                    }
+                }
+                ul{
+                    li{
+                        a{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+        #intro{
+            p{
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    #legals{
+        font-size: .8rem;
+    }
+
+
+}
+
+//Desktop & Ipad
+@media (min-width: 768px) {
+
+    #hero{
+        header{
+            nav{
+                display: flex;
+                align-items: center;
+                height: 15vh;
+                background: none;
+                position: initial;
+                padding: 0;
+                z-index: 0;
+                #nav-title{
+                    display: none;
+                }
+                ul{
+                    justify-content: space-between;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    margin: 0;
+                    padding: 0 7rem;
+                    .section-1{
+                        margin: 0;
+                    }
+                    .section-1, .section-2{
+                        display: flex;
+                        gap: 8rem;
+                    }
+                    li + li{
+                        margin: 0;
+                    }
+                    li{
+                        a{
+                            font-size: .8rem;
+                        }
+                    }
+                }
+            }
+            #menu{
+                display: none;
+            }
+        }
+    }
+
+    .img{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .info{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        p{
+            text-align: center;
+        }
+    }
+
+
+    .more{
+        display: flex;
+        justify-content: center;
+    }
+
+    #projects{
+        .individual-projects{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            .container{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                padding: 4rem 6rem;
+                .info{
+                    margin: 0;
+                    width: initial;
+                    p{
+                        text-align: left;
+                        margin: 0;
+                    }
+                }
+                .more{
+                    display: initial;
+                }
+            }
+            &:nth-child(3){
+                .project-img{
+                    grid-column: 2/3;
+                }
+                .container{
+                    grid-column: 1/2;
+                    grid-row: 1/2;
+                }
+            }
+        }
+    }
+
+    footer{
+        .container{
+            padding: 0 2rem;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+}
+
+//Ipad
+@media (max-width: 1024px) and (min-width: 768px) {
+    .title{
+        h1{
+            font-size: 1rem;
+        }
+    }
+    .info p, .more a{
+        font-size: .8rem;
+    }
+
+    #projects{
+        .individual-projects{
+            .container{
+                padding: 1rem 3rem;
+            }
+        }
+    }
+
+    .img{
+        grid-template-columns: repeat(2, 1fr);
+    }
+} 
+
+//Desktop adjustments
+@media (max-width: 1100px) and (min-width: 1024px){
+    #hero{
+        header{
+            nav{
+                ul{
+                    padding: 0 4rem;
+                }
+            }
+        }
+    }
+}
+
+//Ipda adjustments
+@media (min-width: 768px) and (max-width: 1023px){
+    #hero{
+        header{
+            nav{
+                ul{
+                    padding: 0 2rem;
+                    .section-1, .section-2{
+                        gap: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//Mobile Landscape
+@media (max-width: 812px) and (max-height: 414px) {
+
+    .container{
+        .title{
+            h1{
+                font-size: 1.5rem;
+            }
+        }
+        .info{
+            p{
+                font-size: 1rem;
+            }
+        }
+        .more{
+            a{
+                font-size: 1rem;
+            }
+        }
+    }
+
+    #hero{
+        header{
+            nav{
+                display: flex;
+                align-items: center;
+                height: 15vh;
+                background: none;
+                position: initial;
+                padding: 0;
+                z-index: 0;
+                #nav-title{
+                    display: none;
+                }
+                ul{
+                    justify-content: space-between;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    margin: 0;
+                    padding: 0 2rem;
+                    .section-1{
+                        margin: 0;
+                    }
+                    .section-1, .section-2{
+                        display: flex;
+                        gap: 3rem;
+                    }
+                    li + li{
+                        margin: 0;
+                    }
+                    li{
+                        a{
+                            font-size: .8rem;
+                        }
+                    }
+                }
+            }
+            #menu{
+                display: none;
+            }
+        }
+        #intro{
+            p{
+                font-size: 1.7rem;
+            }
+        }
+    }
+
+    .img{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .info{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        p{
+            text-align: center;
+        }
+    }
+
+
+    .more{
+        display: flex;
+        justify-content: center;
+    }
+
+    #projects{
+        .individual-projects{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            .container{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                padding: 0rem 2rem;
+                gap: 1rem;
+                .title{
+                    h1{
+                        font-size: 1.2rem;
+                    }
+                }
+                .info{
+                    margin: 0;
+                    width: initial;
+                    p{
+                        text-align: left;
+                        margin: 0;
+                        font-size: .9rem;
+                    }
+                }
+                .more{
+                    display: initial;
+                    a{
+                        font-size: .9rem;
+                    }
+                }
+            }
+            &:nth-child(3){
+                .project-img{
+                    grid-column: 2/3;
+                }
+                .container{
+                    grid-column: 1/2;
+                    grid-row: 1/2;
+                }
+            }
+        }
+    }
+
+    footer{
+        .container{
+            padding: 0 2rem;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            #socials{
+                a{
+                    font-size: .8rem;
+                }
+            }
+            #legals{
+                span, a{
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+
+}
+
+//Mobile Landscape Adjustments
+@media (max-width: 667px) and (max-height: 375px) {
+
+    .container{
+        .title{
+            h1{
+                font-size: 1.5rem;
+            }
+        }
+        .info{
+            p{
+                font-size: 1rem;
+            }
+        }
+        .more{
+            a{
+                font-size: 1rem;
+            }
+        }
+    }
+
+    #hero{
+        height: 100vh;
+        position: relative;
+        header{
+            height: 15vh;
+            display: flex;
+            align-items: center;
+            a{
+                color: white;
+            }
+            nav{
+                position: absolute;
+                width: 100vw;
+                height: 100vh;
+                background-color: hsla(0, 0, 0, .7);
+                z-index: 1;
+                top: 0;
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                padding-top: 3rem;
+                display: initial;
+                #nav-title{
+                    display: initial;
+                    h1{
+                        font-size: 2.25rem;
+                    }
+                }
+                ul{
+                    margin-top: 2rem;
+                    display: initial;
+                    .section-1{
+                        margin-bottom: 1rem;
+                    }
+                    .section-1, .section-2{
+                        display: initial;
+                    }
+                    li + li{
+                        margin-top: 1rem;
+                    }
+                    li{
+                        a{
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+            } /*JS*/ .navToggle{left: 0;}
+            #menu{
+                margin-left: 2rem;
+                display: initial;
+                button{
+                    background: transparent;
+                    outline: none;
+                    border: none;
+                    cursor: pointer;
+                    width: 30px;
+                    height: 25px;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    .line{
+                        height: 4px;
+                        width: 100%;
+                        background-color: white;
+                        position: absolute;
+                    } 
+                    .line-1{
+                        top: 0;
+                    } /*JS*/ .line1Toggle{top: 50%; transform: translateY(-50%) rotate(45deg);}
+                    .line-2{
+                        top: 50%;
+                        transform: translateY(-50%);
+                    } /*JS*/ .line2Toggle{opacity: 0;}
+                    .line-3{
+                        bottom: 0;
+                    } /*JS*/ .line3Toggle{bottom: 50%; transform: translateY(50%) rotate(-45deg);}
+                }
+            } /*JS*/ .menuToggle{z-index: 2;}
+            #title{
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                a{
+                    h1{
+                        text-transform: uppercase;
+                        font-size: 2.25rem;
+                        letter-spacing: 4px;
+                    }
+                }
+            }
+        }
+    }
+
+    #projects{
+        .individual-projects{
+            .container{
+                .title{
+                    h1{
+                        font-size: 1rem;
+                    }
+                }
+                .info{
+                    margin: 0;
+                    width: initial;
+                    p{
+                        text-align: left;
+                        margin: 0;
+                        font-size: .7rem;
+                    }
+                }
+                .more{
+                    display: initial;
+                    a{
+                        font-size: .7rem;
+                    }
+                }
+            }
+        }
+    }
+
+}
